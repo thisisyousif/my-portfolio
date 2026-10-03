@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Marhey:wght@400;700&family=Playpen+Sans+Arabic:wght@400;700&family=Reem+Kufi+Fun:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
 :root {
     --color1: #0f0c29;
     --color2: #302b63;
@@ -24,6 +25,7 @@ main {
     margin: 0 auto;
 
 }
+
 /* nav settings */
 nav {
     display: flex;
@@ -46,7 +48,7 @@ nav .nav-items {
 
 nav .nav-link {
     font-size: 1.5rem;
-    font-family: "Playpen Sans Arabic" ;
+    font-family: "Playpen Sans Arabic";
     text-decoration: none;
     color: #ffffff;
     transition: all 0.3s;
@@ -62,6 +64,13 @@ nav .logo {
     max-height: 100%;
     border-radius: 50%;
     width: 15%;
+}
+
+nav #mobile-menu {
+    color: #667eea;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
 }
 
 .btn-primary,
@@ -100,9 +109,10 @@ nav .logo {
     border-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
+
 /* hero settings */
 
-.hero{
+.hero {
     margin-top: 12vh;
     display: flex;
     align-items: center;
@@ -111,11 +121,13 @@ nav .logo {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     gap: 2rem;
 }
-.hero-content{
+
+.hero-content {
     flex: 1;
     max-width: 600px;
 }
-.hero-title{
+
+.hero-title {
     font-family: Marhey;
     font-size: 3.5rem;
     font-weight: 800;
@@ -124,7 +136,8 @@ nav .logo {
     margin-bottom: 0.5rem;
 
 }
-.hero-title span{
+
+.hero-title span {
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,20 +145,24 @@ nav .logo {
     font-size: 3rem;
 
 }
+
 .hero-subtitle {
     font-family: Tajawal;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.8;
-    margin: 1.5rem 0 2rem;/*  up left-right down */
+    margin: 1.5rem 0 2rem;
+    /*  up left-right down */
     font-weight: 300;
 }
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
 }
+
 .hero-stats {
     display: flex;
     gap: 2.5rem;
@@ -153,6 +170,7 @@ nav .logo {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .hero-stats span {
     display: flex;
     align-items: center;
@@ -161,14 +179,16 @@ nav .logo {
     font-size: 1rem;
     font-weight: 500;
 }
+
 .hero-stats i {
     color: #667eea;
     font-size: 1.2rem;
     width: 1.5rem;
     text-align: center;
 }
+
 .hero-image {
-    
+
     flex: 0 0 400px;
     height: 400px;
     display: flex;
@@ -189,6 +209,7 @@ nav .logo {
 
     transition: all 0.5s ease;
 }
+
 .hero-image img:hover {
     transform: scale(1.03);
     border-color: rgba(102, 126, 234, 0.5);
@@ -203,6 +224,7 @@ nav .logo {
     background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
     padding: 2rem 8%;
 }
+
 .projects h3 {
     font-family: Cairo;
     color: #ffffff;
@@ -217,6 +239,7 @@ nav .logo {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
 .projects-list {
     display: flex;
     flex-direction: column;
@@ -233,9 +256,11 @@ nav .logo {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
+
 .project:hover {
     transform: translateY(-5px);
 }
+
 .project-gallery {
     flex: 1;
     display: grid;
@@ -251,15 +276,18 @@ nav .logo {
     border-radius: 1rem;
     transition: transform 0.3s ease;
 }
+
 .project-gallery img:hover {
     transform: scale(1.03);
 }
+
 .project-gallery img:first-child {
     grid-column: 1 / -1;
     width: 100%;
     height: 200px;
-     
+
 }
+
 .project-info {
     flex: 1;
     padding: 1.5rem;
@@ -267,30 +295,40 @@ nav .logo {
     flex-direction: column;
     overflow: auto;
 }
+
 .project-info h2 {
+    position: sticky;
+    top: 0;
     color: #ffffff;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
+
 .project-tech {
+    position: sticky;
+    top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
     margin-bottom: 1rem;
 }
+
 .project-tech span {
     background: rgba(102, 126, 234, 0.2);
     color: #a8b9ff;
     padding: 0.3rem 1rem;
     border-radius: 50px;
     font-size: 0.9rem;
+    font-weight: bold;
     border: 1px solid rgba(102, 126, 234, 0.2);
 }
+
 .project-info p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     line-height: 1.7;
 }
+
 /* footer settings */
 footer {
     background: var(--color3);
@@ -303,27 +341,170 @@ footer {
     align-items: center;
     z-index: 3;
 }
+
 footer h3 {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.5rem;
     text-align: center;
 }
+
 footer .icons {
     display: flex;
     gap: 1rem;
 }
+
 footer i {
 
     color: #667eea;
     font-size: 2.5rem;
 }
+
 footer i:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* for medium screens (tablet) */
+@media (max-width: 1024px) {
+    nav .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
 
 
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: 0 0 300px;
+        height: 300px;
+    }
 
 
+}
 
+/* for small screens (mobile) */
+@media (max-width: 768px) {
 
+    /* ===== NAV ===== */
+    nav {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        height: 10vh;
+    }
+
+    nav .nav-items {
+        display: none;
+        /* إخفاء القائمة */
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--color3);
+        padding: 1.5rem;
+        gap: 1rem;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    nav #mobile-menu {
+        display: block;
+        /* إظهار أيقونة القائمة */
+    }
+
+    nav .nav-link {
+        font-size: 1rem;
+    }
+
+    nav .logo {
+        width: 20%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+/* ===== HERO ===== */
+
+    .hero {
+        padding: 1.5rem 5%;
+        margin-top: 10vh;
+       
+    }
+.hero-title {
+        font-size: 2.2rem;
+    }
+.hero-title span {
+        font-size: 1.8rem;
+    }
+.hero-image {
+        flex: 0 0 200px;
+        height: 200px;
+        
+    }
+.hero-stats {
+        gap: 1.2rem;
+        justify-content: center;
+    }
+
+.hero-stats span {
+        font-size: 0.85rem;
+    }
+    /* ===== PROJECTS ===== */
+    .projects {
+        padding: 1.5rem 5%;
+    }
+
+    .projects h3 {
+        font-size: 1.5rem;
+    }
+.project {
+        max-height:600px;
+        flex-direction: column;
+    }
+
+    
+.project-info {
+        padding: 1.2rem;
+    }
+
+    .project-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .project-tech span {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.8rem;
+    }
+/* ===== FOOTER ===== */
+    footer h3 {
+        font-size: 1.4rem;
+    }
+    footer i{
+        font-size: 2.3rem;
+    }
+    footer .icons {
+        gap: 1rem;
+    }
+
+    footer .icons a {
+        font-size: 1.5rem;
+    }
+
+}
